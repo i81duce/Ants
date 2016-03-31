@@ -29,8 +29,8 @@ public class Main extends Application {
         ArrayList<Ant> ants = new ArrayList<>(); // creating an empty arrayList of Ants called ants;
         for (int i = 0; i < ANT_COUNT; i++) { // for-loop that loops from 0-99. ANT COUNT IS 100
             Random r = new Random(); // creates a Random generator that we're calling 'r'
-            ants.add(new Ant(r.nextInt(WIDTH), r.nextInt(HEIGHT), Color.BLACK)); // adding new Ant object which contains an 'x' int argument, and a 'y' int argument.
-        }                                                           // picks a random # between 0-800 for width, 0-600 for height, and assigns it to Ant, 99 (100?) instances
+            ants.add(new Ant(r.nextInt(WIDTH), r.nextInt(HEIGHT), Color.BLACK)); // adding new Ant object which contains an 'x' int parameter, a 'y' int parameter, and a Color parameter.
+        }                                                                        // picks a random # between 0-800 for width, 0-600 for height, and assigns it to Ant, 99 (100?) instances
         return ants; // returning the arrayList that we called 'ants' which now contains 99 (100?) new Ants which all have unique random coordinates
     }
 
